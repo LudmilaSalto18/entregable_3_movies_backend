@@ -1,8 +1,8 @@
 const sequelize = require('../utils/connection');
-require('../models/Genre')
 require('../models/Actor')
-require('../models/Movie')
+require('../models/Genre')
 require('../models/Director')
+require('../models/Movie')
 const main = async() => {
     try{
         await sequelize.sync({ force: true });
